@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Springs Sunrise Primary | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- URGENT NOTICE BANNER -->
+    <div id="urgent-notice" role="alert"></div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+
+            <div class="logo">
+                <h1>🌿 Springs Sunrise Primary</h1>
+                <p>Growing minds, bright futures</p>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="main-nav">
+                <ul id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#academics" class="nav-link">Academics</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#news" class="nav-link">News</a></li>
+                    <li><a href="#staff" class="nav-link">Staff</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="hero-badge">Est. 1995 · Springs, Gauteng</span>
+                <h2>Welcome to Springs Sunrise</h2>
+                <p>Quality education in the heart of Springs.</p>
+                <a href="#contact" class="btn">Enquire Now</a>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about-grid">
+
+                    <div class="about-text">
+                        <p>Founded in 1995, Springs Sunrise Primary is dedicated to nurturing young minds with a balanced curriculum of academics, sport, and culture.</p>
+                        <p><strong>Mission:</strong> To empower every learner to reach their full potential in a safe, supportive environment.</p>
+                        <p><strong>Vision:</strong> Building responsible, confident citizens for tomorrow's South Africa.</p>
+                    </div>
+
+                    <div class="principal-msg">
+                        <img src="images/principal.jpg" alt="Mrs. Dlamini, Principal of Springs Sunrise Primary">
+                        <p><em>"Every child is a star. We just help them shine."</em><br>
+                        <strong>– Mrs. Dlamini, Principal</strong></p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ACADEMICS -->
+        <section id="academics" class="section bg-light">
+            <div class="container">
+                <h2>Academics</h2>
+                <div class="cards">
+
+                    <div class="card">
+                        <div class="card-icon">📚</div>
+                        <h3>Foundation Phase</h3>
+                        <p>Grade R – Grade 3: Literacy, numeracy, life skills.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">🔬</div>
+                        <h3>Intermediate Phase</h3>
+                        <p>Grade 4 – Grade 6: Languages, Mathematics, Natural Sciences, Social Sciences.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">🎨</div>
+                        <h3>Senior Phase</h3>
+                        <p>Grade 7 – Grade 9: EMS, Technology, Creative Arts, and more.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery" class="section">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div id="gallery-grid" class="gallery-grid">
+                    <!-- Injected by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWS -->
+        <section id="news" class="section bg-light">
+            <div class="container">
+                <h2>Latest News</h2>
+                <div id="news-list" class="news-list">
+                    <!-- Injected by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- STAFF -->
+        <section id="staff" class="section">
+            <div class="container">
+                <h2>Staff Directory</h2>
+                <div id="staff-grid" class="staff-grid">
+                    <!-- Injected by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <h2>Contact Us</h2>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p><strong>📍 Address:</strong> 123 School Road, Springs, 1559</p>
+                        <p><strong>📞 Phone:</strong> (011) 812 3456</p>
+                        <p><strong>✉️ Email:</strong> info@springssunrise.co.za</p>
+                        <p><strong>🕒 Office Hours:</strong> Mon–Fri, 07:30 – 15:00</p>
+                    </div>
+                    <div class="map-wrap">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Springs%2C%20South%20Africa&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="200" style="border:0;"
+                            allowfullscreen="" loading="lazy"
+                            title="Map of Springs, South Africa">
+                        </iframe>
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form" id="contact-form">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                    <p id="form-status" class="form-status" aria-live="polite"></p>
+                </form>
+
+                <p class="form-note">* Sign up free at <a href="https://formspree.io" target="_blank" rel="noopener">formspree.io</a> and replace <code>YOUR_FORM_ID</code> in script.js.</p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Springs Sunrise Primary. All rights reserved.</p>
+            <p>Website designed &amp; maintained by Karabo Mphafudi</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
